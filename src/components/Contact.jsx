@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-16 px-4 bg-white dark:bg-gray-950 text-center"
+      className="py-16 px-4 bg-white dark:bg-slate-950 text-center"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400 mb-6">
         Contact Me
@@ -15,7 +15,7 @@ const Contact = () => {
       </p>
 
       <form
-        action="https://formspree.io/f/manboagg"
+        action="https://formspree.io/f/your-form-id"
         method="POST"
         className="max-w-2xl mx-auto space-y-6"
       >
@@ -32,6 +32,14 @@ const Contact = () => {
           name="email"
           placeholder="Your Email"
           required
+          className="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+        />
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Your Phone Number"
+          pattern="[0-9]{10,15}"
           className="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
         />
 
