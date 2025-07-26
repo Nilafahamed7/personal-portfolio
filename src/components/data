@@ -1,0 +1,58 @@
+import netflix from "../assets/netflix.png";
+import apple from "../assets/apple.png";
+import movie from "../assets/movie.png";
+import nostra from "../assets/nostra.png";
+import weather from "../assets/weather.png";
+import udemy from "../assets/udemy.png"
+
+const projects = [
+  {
+    title: "Netflix Login Page",
+    description:
+      "A replica of the Netflix login page using React and TailwindCSS.",
+    image: netflix,
+    github: "https://github.com/Nilafahamed7/eduflix-ui.git",
+    live: "https://eduflix-ui.vercel.app/",
+  },
+  {
+    title: "Apple Clone",
+    description:
+      "Fully responsive Apple website UI clone built with React and TailwindCSS.",
+    image: apple,
+    github: "https://github.com/Nilafahamed7/Apple-clone.git",
+    live: "https://apple-clone-one-iota.vercel.app/",
+  },
+  {
+    title: "Weather App",
+    description: "A weather forecast app using API integration and clean UI.",
+    image: weather,
+    github: "https://github.com/Nilafahamed7/weather-App.git",
+    live: "https://weather-app-ten-nu-96.vercel.app/",
+  },
+  {
+    title: "Nostra E-commerce",
+    description:
+      "An e-commerce website frontend design made with HTML, JS, and TailwindCSS.",
+    image: nostra,
+    github: "https://github.com/Nilafahamed7/Nostra.git",
+    live: "https://nilafahamed7.github.io/Nostra/",
+  },
+  {
+    title: "Movie App",
+    description:
+      "A movie search app using TMDB API with search and filter functionality.",
+    image: movie,
+    github: "https://github.com/Nilafahamed7/Movie-app.git",
+    live: "https://movie-app-nu-gray.vercel.app/",
+  },
+  {
+    title: "Udemy Clone",
+    description:
+      "A frontend clone of the Udemy homepage with responsive design using React and TailwindCSS.",
+    image: udemy,
+    github: "https://github.com/Nilafahamed7/udemy-clone.git",
+    live: "https://nilafahamed7.github.io/udemy-clone/",
+  },
+];
+
+export default projects;
