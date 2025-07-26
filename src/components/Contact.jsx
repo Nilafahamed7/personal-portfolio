@@ -15,7 +15,7 @@ const Contact = () => {
       </p>
 
       <form
-        action="https://formspree.io/f/your-form-id"
+        action="https://formspree.io/f/manboagg"
         method="POST"
         className="max-w-2xl mx-auto space-y-6"
       >
