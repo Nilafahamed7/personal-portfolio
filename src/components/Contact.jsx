@@ -1,25 +1,43 @@
 import React from "react"
+import { motion } from "framer-motion"
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 }
+}
 
 const Contact = () => {
   return (
-    <section
+    <motion.section
       id="contact"
       className="py-16 px-4 bg-white dark:bg-slate-950 text-center"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ staggerChildren: 0.2 }}
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400 mb-6">
+      <motion.h2
+        variants={fadeIn}
+        className="text-3xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400 mb-6"
+      >
         Contact Me
-      </h2>
+      </motion.h2>
 
-      <p className="text-gray-700 dark:text-gray-300 mb-10 max-w-xl mx-auto">
+      <motion.p
+        variants={fadeIn}
+        className="text-gray-700 dark:text-gray-300 mb-10 max-w-xl mx-auto"
+      >
         Have a question or want to work together? Fill out the form and I'll get back to you soon!
-      </p>
+      </motion.p>
 
-      <form
+      <motion.form
+        variants={fadeIn}
         action="https://formspree.io/f/manboagg"
         method="POST"
         className="max-w-2xl mx-auto space-y-6"
       >
-        <input
+        <motion.input
+          variants={fadeIn}
           type="text"
           name="name"
           placeholder="Your Name"
@@ -27,7 +45,8 @@ const Contact = () => {
           className="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
         />
 
-        <input
+        <motion.input
+          variants={fadeIn}
           type="email"
           name="email"
           placeholder="Your Email"
@@ -35,7 +54,8 @@ const Contact = () => {
           className="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
         />
 
-        <input
+        <motion.input
+          variants={fadeIn}
           type="tel"
           name="phone"
           placeholder="Your Phone Number"
@@ -43,22 +63,24 @@ const Contact = () => {
           className="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
         />
 
-        <textarea
+        <motion.textarea
+          variants={fadeIn}
           name="message"
           rows="5"
           placeholder="Your Message"
           required
           className="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-        ></textarea>
+        ></motion.textarea>
 
-        <button
+        <motion.button
+          variants={fadeIn}
           type="submit"
           className="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300"
         >
           Send Message
-        </button>
-      </form>
-    </section>
+        </motion.button>
+      </motion.form>
+    </motion.section>
   )
 }
 
