@@ -27,9 +27,7 @@ const About = () => {
         variants={fadeUp}
         className="max-w-3xl mx-auto text-lg text-gray-700 dark:text-gray-300 mb-8"
       >
-        Hi, I'm Nilaf Ahamed — a passionate Full Stack Developer with a strong foundation in Commerce and Computer Applications.
-        I specialize in crafting responsive, scalable, and user-friendly web applications using modern technologies such as React, Node.js, Express, and MongoDB.
-        Currently, I'm building real-world projects to refine my skills and actively exploring exciting opportunities to grow and contribute in the tech industry.
+        Hey there! I’m Nilaf Ahamed, a Full Stack Developer who loves transforming ideas into powerful digital experiences. From sleek frontends to robust backend systems, I enjoy working across the stack with tools like React, Node.js, Express, and MongoDB. I’m constantly learning through hands-on projects and collaborations, and I’m excited to take on new challenges that help me grow as a developer.
       </motion.p>
 
       <motion.h3
